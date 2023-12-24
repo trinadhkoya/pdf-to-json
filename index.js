@@ -18,7 +18,7 @@ try {
             fs.writeFileSync(LOCAL_PDF_PATH, Buffer.from(response.data, 'binary'));
             // Extract tables from the downloaded PDF
             pdf_table_extractor(LOCAL_PDF_PATH, res => {
-                res.pageTables.map(item => item)
+                res?.pageTables?.map(item => item)
             }, err => {
                 console.log(err)
             });
