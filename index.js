@@ -4,7 +4,7 @@ import fs from "fs";
 import * as https from "https";
 
 try {
-    const REMOTE_PDF_URL = 'https://oghwkgfcydjubtkihqio.supabase.co/storage/v1/object/sign/wtally/Invoices/ICDC.pdf';
+    const REMOTE_PDF_URL = '<your_remote_pdf_link_url>';
     const LOCAL_PDF_PATH = './ICDC.pdf';
 
     // Disable SSL certificate verification
